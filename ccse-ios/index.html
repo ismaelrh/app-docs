@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Soporte | Examen CCSE</title>
+  <meta name="description" content="Soporte de la app Examen CCSE. Contacto, política de privacidad y términos de uso.">
+  <style>
+    :root {
+      --bg: #f6f7fb;
+      --card: rgba(255, 255, 255, 0.9);
+      --text: #172033;
+      --muted: #607085;
+      --line: #d9e1eb;
+      --primary: #8d1118;
+      --gold: #f2b707;
+      --link: #0f5cc0;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top right, rgba(242, 183, 7, 0.16), transparent 28%),
+        radial-gradient(circle at left 20%, rgba(141, 17, 24, 0.12), transparent 30%),
+        linear-gradient(180deg, #fbfcff 0%, var(--bg) 100%);
+      line-height: 1.6;
+    }
+    main {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 32px 20px 56px;
+    }
+    .flag {
+      width: 52px;
+      height: 16px;
+      border-radius: 999px;
+      overflow: hidden;
+      display: inline-grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+    .flag span:nth-child(1),
+    .flag span:nth-child(3) { background: var(--primary); }
+    .flag span:nth-child(2) { background: var(--gold); }
+    .hero,
+    .card {
+      background: var(--card);
+      backdrop-filter: blur(10px);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      box-shadow: 0 16px 40px rgba(22, 33, 55, 0.06);
+    }
+    .hero {
+      padding: 28px;
+      margin-bottom: 18px;
+    }
+    .card {
+      padding: 22px;
+      margin-top: 18px;
+    }
+    h1, h2, p { margin: 0 0 14px; }
+    h1 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.05;
+      letter-spacing: -0.03em;
+    }
+    h2 {
+      font-size: 1.05rem;
+      color: var(--primary);
+    }
+    p, li {
+      color: var(--text);
+      font-size: 1rem;
+    }
+    .muted {
+      color: var(--muted);
+    }
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 8px;
+    }
+    .button,
+    .link-card {
+      text-decoration: none;
+      color: inherit;
+    }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 0 18px;
+      border-radius: 16px;
+      border: 1px solid transparent;
+      font-weight: 600;
+    }
+    .button.primary {
+      background: var(--primary);
+      color: white;
+    }
+    .button.secondary {
+      background: white;
+      border-color: var(--line);
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 14px;
+      margin-top: 12px;
+    }
+    .link-card {
+      display: block;
+      padding: 18px;
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+    }
+    .link-card strong {
+      display: block;
+      margin-bottom: 6px;
+    }
+    .link-card span {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+    a { color: var(--link); }
+    ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <div class="flag" aria-hidden="true"><span></span><span></span><span></span></div>
+      <p class="muted" style="margin-top: 14px;">Soporte oficial de la app</p>
+      <h1>Examen CCSE</h1>
+      <p>Si necesitas ayuda con la app, quieres comunicar un error en una pregunta o tienes una incidencia técnica, puedes escribir directamente por correo electrónico.</p>
+      <div class="actions">
+        <a class="button primary" href="mailto:apps@ismaelrh.com">Contactar con soporte</a>
+        <a class="button secondary" href="privacy-policy.html">Política de privacidad</a>
+        <a class="button secondary" href="terms-of-use.html">Términos de uso</a>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Contacto</h2>
+      <p>Correo de soporte: <a href="mailto:apps@ismaelrh.com">apps@ismaelrh.com</a></p>
+      <p class="muted">Puedes escribir para dudas sobre funcionamiento, errores, sugerencias o problemas con el contenido.</p>
+    </section>
+
+    <section class="card">
+      <h2>Qué incluir en tu mensaje</h2>
+      <ul>
+        <li>modelo de iPhone o iPad y versión de iOS;</li>
+        <li>versión de la app;</li>
+        <li>descripción breve del problema;</li>
+        <li>si aplica, el identificador o enunciado de la pregunta afectada.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Enlaces legales</h2>
+      <div class="grid">
+        <a class="link-card" href="privacy-policy.html">
+          <strong>Política de privacidad</strong>
+          <span>Cómo se gestionan los datos y el funcionamiento general de la app.</span>
+        </a>
+        <a class="link-card" href="terms-of-use.html">
+          <strong>Términos de uso</strong>
+          <span>Condiciones de uso, responsabilidad y relación con el Instituto Cervantes.</span>
+        </a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
